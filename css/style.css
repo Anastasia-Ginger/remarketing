@@ -1,0 +1,40 @@
+@import url(bootstrap.css);
+@import url(bootstrap-grid.css);
+@import url(bootstrap-reboot.css);
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
+.main_page {
+  background-color: black;
+  height: 100vh;
+  position: relative; }
+  .main_page .navbar-dark .navbar-nav .nav-link {
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    color: white;
+    padding-left: 100px; }
+    @media screen and (max-width: 1024px) {
+      .main_page .navbar-dark .navbar-nav .nav-link {
+        padding-left: 70px; } }
+    .main_page .navbar-dark .navbar-nav .nav-link:hover {
+      text-decoration: line-through;
+      color: #ffffff; }
+  .main_page .navbar-toggler {
+    border-radius: 0;
+    border: none; }
+    .main_page .navbar-toggler:hover, .main_page .navbar-toggler:focus {
+      border: none; }
+    .main_page .navbar-toggler span {
+      background-image: none; }
+      .main_page .navbar-toggler span i {
+        color: white;
+        font-size: 28px; }
+  .main_page .main-screen {
+    position: absolute;
+    bottom: 40vh; }
+    @media screen and (max-width: 736px) {
+      .main_page .main-screen {
+        bottom: 10vh; } }
+    @media screen and (max-width: 414px) {
+      .main_page .main-screen {
+        bottom: 20vh; } }
+
+/*# sourceMappingURL=style.css.map */
