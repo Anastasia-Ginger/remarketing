@@ -11,46 +11,240 @@ $font-sub: 'Oswald', sans-serif;
     @content;
   }
 }
-
-.main_page{
-  background-color: black;
-  height: 100vh;
-  position: relative;
-  .navbar-dark .navbar-nav .nav-link{
-    font-family: $font-sub;
-    font-size: 18px;
-    color: white;
-    padding-left: 100px;
-    @include max-screen (1024px) {
-      padding-left: 70px;
-    }
-    &:hover {
-      text-decoration: line-through;
-      color: #ffffff;
+body{
+  font-family: $font-main;
+}
+p{
+  font-family: $font-sub;
+  font-weight: 300;
+  font-size: 18px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  font-family: $font-sub;
+  font-size: 18px;
+  color: white;
+  padding-left: 100px;
+  @include max-screen(1024px) {
+    padding-left: 70px;
+  }
+  &:hover {
+    text-decoration: line-through;
+    color: #ffffff;
+  }
+}
+.navbar-toggler {
+  border-radius: 0;
+  border: none;
+  &:hover, &:focus {
+    border: none;
+  }
+  span {
+    background-image: none;
+    i {
+      color: white;
+      font-size: 28px;
     }
   }
-  .navbar-toggler{
-    border-radius: 0;
-    border: none;
-    &:hover, &:focus{
-      border: none;
+}
+.main_page {
+  background-color: black;
+  height: 100vh;
+  .main-info{
+    background-image: url("../images/clean.gif");
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 74vh;
+    background-position: center center;
+  }
+  .main-text {
+    margin-bottom: 24vh;
+    h1{
+      font-size: 70px;
     }
-    span{
-      background-image: none;
-      i{
-        color: white;
-        font-size: 28px;
+    h2{
+      font-size: 35px;
+    }
+    .btn{
+      font-family: $font-sub;
+      padding: 15px;
+      border: 3px solid white;
+    }
+  }
+  h6{
+    font-family: $font-sub;
+    font-weight: 300;
+  }
+}
+.bg-black{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.about_RE{
+  background-color: black;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  .mb-220{
+    margin-bottom: 220px;
+  }
+  .pb-60{
+    padding-bottom: 60px;
+  }
+}
+.specialists {
+  padding-top: 90px;
+  @include max-screen (768px) {
+    padding-top: 40px;
+  }
+  h3 {
+    font-size: 30px;
+    font-family: $font-main;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 86px;
+    @include max-screen (768px) {
+      margin-bottom: 40px;
+    }
+  }
+  img {
+    margin-bottom: 58px;
+    @include max-screen (768px) {
+      margin-bottom: 5px;
+    }
+  }
+  h4 {
+    font-size: 18px;
+    font-family: $font-sub;
+    margin-bottom: 56px;
+    color: black;
+    @include max-screen (768px) {
+      margin-bottom: 30px;
+    }
+  }
+  &:after {
+    content: "";
+    display: block;
+    width: 40%;
+    border-bottom: 1px dashed black;
+    padding-top: 100px;
+    @include max-screen (768px) {
+      border-bottom: none;
+      padding-top: 30px;
+    }
+  }
+}
+.last_block {
+  &:after{
+    content: "";
+    display: block;
+    border-bottom: none!important;
+  }
+}
+.program {
+  h3{
+    font-family:$font-main ;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  p {
+    color: #000000;
+    font-family: $font-sub;
+    font-size:18px ;
+  }
+
+  .panel {
+    box-shadow: none;
+    border: none;
+    &:nth-of-type(2n).panel-default > .panel-heading{
+      background-color: #c4c4c4;
+    }
+  }
+
+  .panel-default > .panel-heading {
+    background-image: none;
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #ffffff;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: $font-sub;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    span {
+      font-size: 48px;
+      font-weight: 700;
+      margin-right: 44px;
+      font-family: $font-main;
+    }
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+}
+.panel-body {
+  padding-top: 30px;
+
+  p{
+    font-size: 18px;
+    color: #000000;
+  }
+
+  .row {
+    margin-bottom: 50px;
+    padding-bottom: 0;
+    margin-left: 15px;
+
+    &:nth-of-type(2) {
+      margin-bottom: 35px;
+    }
+  }
+  .col-sm-3 {
+    padding: 0;
+
+    .foto-men {
+      width: 212px;
+      height: 212px;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
       }
     }
   }
-  .main-screen{
-    position: absolute;
-    bottom: 40vh;
-    @include max-screen (736px) {
-      bottom: 10vh;
+
+  .col-sm-2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: start;
+    font-family: $font-main;
+    color: #000000;
+  }
+  .col-sm-4{
+    h6{
+      font-size: 24px;
+      font-family:$font-sub ;
+      color: #000000;
     }
-    @include max-screen (414px) {
-      bottom: 20vh;
+    p{
+      font-size: 18px;
+      font-family:$font-sub ;
+      color: #000000;
     }
+  }
+
+  .col-sm-2, .col-sm-4 {
+    padding-top: 32px;
   }
 }
