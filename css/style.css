@@ -438,6 +438,9 @@ footer {
   background-color: black;
   padding-top: 72px;
   padding-bottom: 68px; }
+  @media screen and (max-width: 414px) {
+    footer .col-md-6 {
+      text-align: center; } }
   footer h5 {
     font-size: 18px;
     line-height: 28px;
