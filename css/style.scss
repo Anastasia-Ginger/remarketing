@@ -475,12 +475,14 @@ p{
     margin-bottom: 30px;
   }
   .col-sm-6{
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-end;
-    img{
-      width: 100%;
+    @include max-screen (414px) {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-end;
+      img{
+        width: 100%;
+      }
     }
   }
 }
@@ -512,7 +514,7 @@ footer{
   background-color: black;
   padding-top: 72px;
   padding-bottom: 68px;
-  @include max-screen (414px) {
+  @include max-screen (731px) {
     .col-md-6{
       text-align: center;
     }

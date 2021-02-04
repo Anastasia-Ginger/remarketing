@@ -402,13 +402,14 @@ p {
     font-family: "Oswald", sans-serif;
     margin-top: 10px;
     margin-bottom: 30px; }
-  .partners .col-sm-6 {
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-end; }
-    .partners .col-sm-6 img {
-      width: 100%; }
+  @media screen and (max-width: 414px) {
+    .partners .col-sm-6 {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-end; }
+      .partners .col-sm-6 img {
+        width: 100%; } }
 
 #back-top {
   position: fixed;
@@ -438,7 +439,7 @@ footer {
   background-color: black;
   padding-top: 72px;
   padding-bottom: 68px; }
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 731px) {
     footer .col-md-6 {
       text-align: center; } }
   footer h5 {
