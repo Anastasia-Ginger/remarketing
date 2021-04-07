@@ -17,7 +17,8 @@ p {
   padding-left: 100px; }
   @media screen and (max-width: 1024px) {
     .navbar-dark .navbar-nav .nav-link {
-      padding-left: 70px; } }
+      padding-left: 70px;
+      font-size: 15px; } }
   .navbar-dark .navbar-nav .nav-link:hover {
     text-decoration: line-through;
     color: #ffffff; }

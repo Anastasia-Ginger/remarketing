@@ -26,6 +26,7 @@ p{
   padding-left: 100px;
   @include max-screen(1024px) {
     padding-left: 70px;
+    font-size: 15px;
   }
   &:hover {
     text-decoration: line-through;
